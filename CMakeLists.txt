@@ -299,13 +299,13 @@ if(WIN32)
   find_path(
     PG_PATH postgres.exe
     PATHS "C:/PostgreSQL" "C:/Program Files/PostgreSQL"
-    PATH_SUFFIXES bin 12/bin 13/bin
+    PATH_SUFFIXES bin 12/bin 13/bin 14/bin
     DOC "The path to a PostgreSQL installation")
 elseif(UNIX)
   find_path(
     PG_PATH postgres
     PATHS $ENV{HOME} /opt/local/pgsql /usr/local/pgsql /usr/lib/postgresql /usr/pgsql-14/bin
-    PATH_SUFFIXES bin 12/bin 13/bin
+    PATH_SUFFIXES bin 12/bin 13/bin 14/bin
     DOC "The path to a PostgreSQL installation")
 endif()
 
